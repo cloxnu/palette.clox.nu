@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#bg-img {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#bg-img-mask {
+    z-index: 11;
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(21, 20, 51, 0.9);
+}
+
+#home-logo-wrapper {
+    position: relative;
+    z-index: 50;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+#home-logo-wrapper p {
+    text-align: center;
+    width: auto;
+    margin: 10px;
+}
+
+#home-logo {
+    position: relative;
+    margin: 5px;
+    width: 180px;
+    height: auto;
+}
+
+#app-store {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+#feedback-email {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    z-index: 50;
+}
